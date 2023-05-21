@@ -1,4 +1,4 @@
-# TakeTones.com Royalty Free Mp3 Track Downloader Free Source Code & Tool
+# TakeTones.com Downloader - Royalty Free Mp3 Track Downloader - Free Source Code & Tool
 Taketones.com copyright free mp3 track downloader in Python using TkInter GUI library
 
 # Purpose Of This Project
