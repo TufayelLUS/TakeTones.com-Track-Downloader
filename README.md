@@ -5,7 +5,7 @@ Taketones.com copyright free mp3 track downloader in Python using TkInter GUI li
 This project enables anyone to download tracks from the <a href="https://taketones.com">taketones.com</a> website. This website is known for offering royalty free music library. Using this Python tool, you'll be able to download mp3 file directly from the website. 
 
 # Usage Guide
-I have included both the source code and compiled windows executable that you can download based on your choice. After executing, you'll see an input field that will accept your input track link. To paste a link, first copy a track like like https://taketones.com/track/desert-wilderness and then click on the input field, the program will auto read your clipboard and set the download link. Then press on the download button and the downloaded mp3 file will appear in the same folder where this program will be placed.
+I have included both the <a href="https://github.com/TufayelLUS/TakeTones.com-Track-Downloader/blob/main/taketones_downloader.py">source code</a> and <a href="https://github.com/TufayelLUS/TakeTones.com-Track-Downloader/raw/main/taketones_downloader.exe">compiled windows executable</a> that you can download based on your choice. After executing, you'll see an input field that will accept your input track link. To paste a link, first copy a track like like https://taketones.com/track/desert-wilderness and then click on the input field, the program will auto read your clipboard and set the download link. Then press on the download button and the downloaded mp3 file will appear in the same folder where this program will be placed.
 
 # Screenshots
 Main screen:<br><br>
