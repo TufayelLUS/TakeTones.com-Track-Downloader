@@ -16,7 +16,7 @@ def download_file():
     # Placeholder function for file download logic
     # print("File download initiated.")
     link = window.clipboard_get().strip()
-    if not link.startswith("https://taketones.com/track/") and not link.startswith("https://www.taketones.com/track/"):
+    if not link.startswith("https://taketones.com/royalty-free-music/") and not link.startswith("https://www.taketones.com/royalty-free-music/"):
         messagebox.showerror("Invalid link", "Please paste a valid Taketones link")
         return
     messagebox.showinfo("Download started!", "Download started and will appear in the folder soon")
@@ -29,11 +29,9 @@ def download_file():
     except:
         print("Failed to open {}".format(link))
         return
-    
-    track_id = re.findall(r'track_id":(.*?),', resp)[0]
-    audio_id = re.findall(r'audio_id":(.*?),', resp)[0]
-    api_link = f"https://api.taketones.com/v1/public/tracks/{track_id}/single/{audio_id}"
-    file_name = resp.split('headerBrowseBlock__title--track">')[1].split('</h1>')[0]
+    audio_path = re.findall(r'"loss_mp3\\":\\"(.*?)\\"', resp)[0]
+    api_link = f"https://tspace.taketones.com/tspace/{audio_path}"
+    file_name = audio_path.split("/")[-1]
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36'
     }
